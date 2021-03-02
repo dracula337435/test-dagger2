@@ -1,5 +1,6 @@
-package io.dracula.test.dagger2;
+package io.dracula.test.di.dagger2;
 
+import io.dracula.test.dagger2.PrintJob;
 import org.junit.Test;
 
 public class TestDagger2 {

@@ -1,7 +1,8 @@
-package io.dracula.test.dagger2;
+package io.dracula.test.di.dagger2;
 
 import dagger.Module;
 import dagger.Provides;
+import io.dracula.test.dagger2.ReportPage;
 
 import javax.inject.Singleton;
 
