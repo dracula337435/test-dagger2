@@ -7,6 +7,9 @@ public class PrintJob {
     @Inject
     public ReportPage reportPage;
 
+    @Inject
+    public ReportPage reportPage2;
+
     public void print() {
         this.reportPage.print();
     }

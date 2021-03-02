@@ -6,10 +6,16 @@ public class TestDagger2 {
 
     @Test
     public void test(){
-        PrintJob job = new PrintJob();
-        DaggerPrintJobComponent.create().inject(job);
+        PrintJobComponent printJobComponent = DaggerPrintJobComponent.create();
+        long start = System.currentTimeMillis();
+        for (int i=0; i<10000; i++) {
+            PrintJob job = new PrintJob();
+            printJobComponent.inject(job);
+        }
+        long end = System.currentTimeMillis();
+        System.out.println(end-start);
         //执行打印
-        job.print();
+//        job.print();
     }
 
 }
